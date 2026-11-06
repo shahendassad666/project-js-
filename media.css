@@ -1,0 +1,546 @@
+/* ============ responsive.css - بكلاسات مشروعك ============ */
+
+/* تابلت */
+@media (max-width:1024px){
+  .hero{ padding:30px 20px !important; gap:20px !important; }
+  .hero-text{ width:58% !important; }
+  .hero-text h1{ font-size:34px !important; line-height:1.2 !important; }
+  .hero-img{ width:38% !important; height:420px !important; }
+}
+
+/* موبايل */
+@media (max-width:800px){
+  /* الناف الابيض يختفي */
+  .top-nav{ flex-direction:column !important; display:none !important; }
+
+  /* الناف الاصفر يفضل ثابت */
+  .main-nav{
+    flex-wrap:wrap !important;
+    height:auto !important;
+    padding:10px 15px !important;
+    position:sticky !important;
+    top:0 !important;
+    z-index:1000 !important;
+  }
+  .search{ max-width:100% !important; width:100% !important; }
+  .menu{ display:none !important; }
+  .menu.active{
+    display:flex !important;
+    flex-direction:column !important;
+    position:absolute !important;
+    top:100% !important;
+    left:0 !important;
+    width:100% !important;
+    background:#ffde59 !important;
+    padding:15px !important;
+    gap:15px !important;
+  }
+  .hamburger, .menu-btn{
+    display:block !important;
+    font-size:24px !important;
+    cursor:pointer !important;
+  }
+
+  /* الهيرو ينزل تحت بعض */
+  .hero{
+    flex-direction:column !important;
+    padding:25px 16px !important;
+    margin:15px !important;
+    text-align:center !important;
+    align-items:center !important;
+  }
+  .hero-text, .hero-img{ width:100% !important; }
+  .hero-text h1{ font-size:28px !important; }
+  .hero-text p{ font-size:14px !important; }
+  .hero-img{ height:320px !important; max-width:340px !important; }
+  .dotted-line{ display:none !important; }
+
+  /* الشريط الاسود */
+  .marquee{
+    padding:10px 0 !important;
+    width:100% !important;
+    margin-left:0 !important;
+    transform:none !important;
+  }
+  .marquee-track span{ font-size:13px !important; }
+}
+
+/* موبايل صغير */
+@media (max-width:480px){
+  .hero-text h1{ font-size:24px !important; }
+  .hero-img{ height:280px !important; }
+  .btn-shop{ width:100% !important; padding:12px !important; }
+}
+/* سكشن المميزات - تابلت */
+@media (max-width:1024px){
+  .features{
+    flex-wrap:wrap !important;
+    padding:20px !important;
+  }
+  .feature{
+    flex:1 1 45% !important;
+  }
+  .feature:nth-child(3)::before{
+    display:none !important;
+  }
+}
+/* ===== Media ===== */
+@media(max-width:1024px){
+  .cat-card{
+    flex:0 0 calc((100% - 30px) / 3);
+  }
+  .cat-card img{
+    height:240px;
+  }
+}
+
+@media(max-width:700px){
+  .top-category{
+    padding:15px 10px 30px;
+  }
+  .cat-head h2{
+    font-size:22px;
+  }
+  .cat-card{
+    flex:0 0 calc((100% - 12px) / 2);
+  }
+  .cat-card img{
+    height:200px;
+  }
+  .cat-card span{
+    font-size:12px;
+    padding:7px 12px;
+  }
+}
+@media(max-width:400px){
+  .cat-card img{
+    height:170px;
+  }
+}
+
+@media(max-width:900px){
+  .hero-banners-container{
+    flex-direction:column;
+  }
+  .banner-card{
+    min-height:220px;
+  }
+  .banner-text h2{
+    font-size:38px;
+  }
+}
+@media(max-width:500px){
+  .banner-card{
+    padding:20px 15px 0 20px;
+  }
+  .banner-img img{
+    max-width:170px;
+    height:180px;
+  }
+  .banner-text p{
+    font-size:13px;
+  }
+}
+/* ===== Media - كل الشاشات ===== */
+
+/* شاشة لابتوب كبيرة - 1200px */
+@media(max-width:1200px){
+  .features-grid{
+    grid-template-columns:repeat(4, 1fr);
+  }
+  .banner-text h2{
+    font-size:42px;
+  }
+}
+
+/* شاشة تابلت كبيرة / لابتوب صغير - 1000px */
+@media(max-width:1000px){
+  .features-grid{
+    grid-template-columns:repeat(3, 1fr);
+  }
+  .features-head{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+  }
+  .hero-banners-container{
+    flex-direction:column;
+  }
+  .banner-card{
+    min-height:220px;
+  }
+  .banner-text h2{
+    font-size:38px;
+  }
+}
+
+/* شاشة تابلت - 768px */
+@media(max-width:768px){
+  .features-grid{
+    grid-template-columns:repeat(2, 1fr);
+    gap:14px;
+  }
+  .features-head h2{
+    font-size:24px;
+  }
+  .ftab{
+    padding:7px 13px;
+    font-size:12px;
+  }
+  .banner-card{
+    padding:20px 18px 0 20px;
+    min-height:200px;
+  }
+  .banner-img img{
+    max-width:200px;
+    height:190px;
+  }
+  .banner-text p{
+    font-size:14px;
+  }
+}
+
+/* شاشة موبايل كبيرة - 500px */
+@media(max-width:500px){
+  .features{
+    padding:20px 10px 30px;
+  }
+  .features-grid{
+    grid-template-columns:repeat(2, 1fr);
+    gap:10px;
+  }
+  .features-head h2{
+    font-size:20px;
+  }
+  .f-info h3{
+    font-size:12px;
+    min-height:34px;
+  }
+  .f-price b{
+    font-size:13px;
+  }
+  .f-off{
+    font-size:10px;
+    padding:4px 8px;
+  }
+  .banner-card{
+    flex-direction:column;
+    align-items:flex-start;
+    padding:18px 15px 0 18px;
+  }
+  .banner-img{
+    width:100%;
+    justify-content:center;
+  }
+  .banner-img img{
+    max-width:100%;
+    height:170px;
+  }
+  .banner-text h2{
+    font-size:30px;
+  }
+  .banner-badge{
+    display:none;
+  }
+}
+
+/* شاشة موبايل صغيرة - 380px */
+@media(max-width:380px){
+  .features-grid{
+    grid-template-columns:1fr 1fr;
+    gap:8px;
+  }
+  .ftab{
+    padding:6px 10px;
+    font-size:11px;
+  }
+  .banner-text h2{
+    font-size:26px;
+  }
+  .banner-btn{
+    padding:8px 16px;
+    font-size:12px;
+  }
+}
+/* الموبايل */
+@media(max-width:768px){
+  .new-head{ flex-direction:column; align-items:flex-start; }
+  .new-head-left h2{ font-size:22px; }
+  .n-card{ min-width:calc(50% - 10px); }
+  .n-add{ opacity:1; transform:none; position:relative; left:0; right:0; bottom:0; margin-top:8px; }
+  .n-img{ padding-bottom:40px; }
+}
+@media(max-width:500px){
+  .new-section{ padding:20px 10px 30px; }
+  .new-grid{ gap:10px; }
+}
+/* ===== How It Work - Media Query ===== */
+
+/* لابتوب كبير - 1200px */
+@media(max-width:1200px){
+  .how-section{
+    padding:35px 18px 50px;
+  }
+  .how-head h2{
+    font-size:28px;
+  }
+  .how-card{
+    padding:25px 16px;
+  }
+}
+
+/* تابلت - 1024px */
+@media(max-width:1024px){
+  .how-grid{
+    gap:15px;
+  }
+  .how-card h3{
+    font-size:15px;
+  }
+  .how-card p{
+    font-size:12px;
+  }
+  .how-icon{
+    width:50px;
+    height:50px;
+    font-size:22px;
+  }
+}
+
+/* تابلت صغير / موبايل كبير - 768px */
+@media(max-width:768px){
+  .how-section{
+    padding:30px 15px 40px;
+  }
+  .how-head h2{
+    font-size:24px;
+  }
+  .how-grid{
+    flex-wrap:wrap;
+  }
+  .how-card{
+    min-width:calc(50% - 8px);
+    flex:none;
+    padding:22px 15px;
+  }
+}
+
+/* موبايل - 500px */
+@media(max-width:500px){
+  .how-section{
+    padding:25px 12px 35px;
+  }
+  .how-head{
+    margin-bottom:20px;
+  }
+  .how-head h2{
+    font-size:20px;
+  }
+  .how-small{
+    font-size:12px;
+  }
+  .how-card{
+    min-width:100%;
+    text-align:center;
+    padding:22px 18px;
+  }
+  .how-icon{
+    margin:0 auto 15px;
+  }
+  .how-num{
+    font-size:22px;
+    top:12px;
+    right:15px;
+  }
+  .how-card p{
+    font-size:13px;
+  }
+}
+
+/* موبايل صغير خالص - 360px */
+@media(max-width:360px){
+  .how-head h2{
+    font-size:18px;
+  }
+  .how-card h3{
+    font-size:14px;
+  }
+}
+/* Trending - Media */
+@media(max-width:768px){
+  .trend-head-left h2{ font-size:22px; }
+  .t-card{ min-width:calc(50% - 10px); }
+  .t-img{ height:220px; }
+}
+@media(max-width:500px){
+  .trend-section{ padding:20px 10px 40px; }
+  .t-card{ min-width:calc(50% - 5px); }
+  .t-img{ height:180px; }
+}
+@media(max-width:768px){
+  .clients-section{ flex-direction:column; }
+  .clients-left{ width:100%; min-width:100%; text-align:center; }
+  .clients-track{ grid-template-columns:1fr; width:100%; }
+}
+/* Blog - Media */
+@media(max-width:900px){
+  .blog-grid{ flex-direction:column; }
+  .blog-big img{ height:220px; }
+  .blog-smalls{ grid-template-columns:1fr 1fr; }
+}
+@media(max-width:500px){
+  .blog-section{ padding:10px 12px 40px; }
+  .blog-head h2{ font-size:22px; }
+  .blog-smalls{ grid-template-columns:1fr; }
+  .blog-small img{ height:160px; }
+}
+/* Newsletter - Media */
+@media(max-width:768px){
+  .news-section{ flex-direction:column; padding:25px 15px; text-align:center; }
+  .news-left{ width:100%; }
+  .news-left h2{ font-size:21px; }
+  .news-form{ margin:0 auto; }
+  .news-right{ width:100%; text-align:center; }
+  .news-right img{ height:200px; max-width:100%; }
+  .news-stars{ left:10px; top:10px; }
+}
+@media(max-width:500px){
+  .news-form{ padding:4px 4px 4px 14px; }
+  .news-form button{ padding:10px 16px; }
+}
+/* ===== Footer - ميديا ===== */
+
+/* تابلت كبير - من 1024 لتحت */
+@media(max-width:1024px){
+  .footer-top{
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+  }
+  .f-brand p{ max-width:100%; }
+}
+
+/* تابلت صغير - من 900 لتحت */
+@media(max-width:900px){
+  .footer{
+    padding:40px 20px 0;
+  }
+  .footer-top{
+    grid-template-columns:1fr 1fr;
+  }
+  .f-post img{
+    width:50px;
+    height:50px;
+  }
+}
+
+/* موبايل - من 600 لتحت */
+@media(max-width:600px){
+  .footer-top{
+    grid-template-columns:1fr;
+    gap:28px;
+    text-align:left;
+  }
+  .f-brand{
+    text-align:left;
+  }
+  .f-brand p{
+    max-width:100%;
+  }
+  .f-col h3{
+    font-size:16px;
+    margin-bottom:12px;
+  }
+  .footer-bottom{
+    flex-direction:column;
+    gap:12px;
+    text-align:center;
+    padding:16px 0 20px;
+  }
+  .f-pay{
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+}
+
+/* موبايل صغير خالص - من 400 لتحت */
+@media(max-width:400px){
+  .footer{
+    padding:30px 15px 0;
+  }
+  .f-post p{
+    font-size:11px;
+  }
+  .back-top{
+    width:42px;
+    height:42px;
+    right:12px;
+    bottom:12px;
+    font-size:18px;
+  }
+}
+@media(max-width:500px){
+  .cart-drawer{ width:100%; max-width:100%; }
+}
+/* ============ لابتوب صغير - من 1024 وانت نازلة ============ */
+@media (max-width: 1024px){
+  .shop-hero{ padding: 0 40px; height: 280px; }
+  .shop-hero-text h1{ font-size: 44px; }
+  .shop-hero-img img{ height: 260px; }
+  .shop-layout{ padding: 20px; gap: 20px; }
+  .products-grid{ grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ============ تابلت - من 768 وانت نازلة ============ */
+@media (max-width: 768px){
+  /* البانر */
+  .shop-hero{ height: auto; flex-direction: column; text-align: center; padding: 20px; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+  .shop-hero-text{ padding-bottom: 10px; }
+  .shop-hero-text h1{ font-size: 34px; }
+  .shop-hero-img img{ height: 220px; margin: 0 auto; }
+
+  /* السايدبار ينزل فوق المنتجات */
+  .shop-layout{ flex-direction: column; }
+  .sidebar{ width: 100%; display: flex; flex-wrap: wrap; gap: 20px; }
+  .sidebar h3{ width: 100%; margin-bottom: 5px; }
+  .big-sale{ width: 100%; }
+
+  /* المنتجات 2 جنب بعض */
+  .products-grid{ grid-template-columns: repeat(2, 1fr); gap: 15px; }
+  .img-box img{ height: 260px; }
+}
+
+/* ============ موبايل - من 480 وانت نازلة ============ */
+@media (max-width: 480px){
+  /* البانر */
+  .shop-hero-text h1{ font-size: 26px; }
+  .shop-hero-text p{ font-size: 13px; }
+  .shop-hero-img img{ height: 180px; }
+
+  /* المنتجات واحد تحت واحد */
+  .products-grid{ grid-template-columns: 1fr; }
+  .img-box img{ height: 300px; }
+
+  /* الدايرة الحمرا تصغر شوية */
+  .badge.off{ width: 48px; height: 48px; font-size: 10px; top: 10px; left: 10px; }
+  .badge{ font-size: 10px; padding: 4px 8px; }
+
+  /* زرار Add To Cart يبان على طول في الموبايل */
+  .add-cart{ opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  /* Size و Color */
+  .sizes span{ width: 30px; height: 30px; }
+  .big-sale img{ width: 70px; }
+  .pagination span{ width: 30px; height: 30px; }
+}
+@keyframes load{
+  to{ width:100%; }
+}
+.loader-box p{
+  margin-top:10px;
+  font-size:13px;
+  letter-spacing:2px;
+}
+@keyframes scroll{
+  from{ transform:translateX(0); }
+  to{ transform:translateX(-50%); }
+}

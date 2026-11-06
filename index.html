@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Project</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+  <!-- شاشة التحميل -->
+<div id="preloader">
+  <div class="loader-box">
+    <h1>pesco</h1>
+    <div class="loader-bar"><span></span></div>
+    <p>Loading...</p>
+  </div>
+</div>
+  <header class="top-nav">
+  <div class="logo"><span><img src="logo-main.webp"></span></div>
+  <div class="search">
+    <button>All Categories ▾</button>
+    <input type="text" placeholder="Enter Search Product">
+    <span class="search-icon"></span>
+  </div>
+  <div class="support">
+    <span class="support-icon"></span>
+    <div><small>Need Support?</small><b>010 123 456 78</b></div>
+  </div>
+</header>
+
+<nav class="main-nav">
+  <div class="cat-wrapper">
+    <button class="cat-btn">☰ Products Category ▾</button>
+    <div class="cat-list">
+      <a href="product.html" class="cat-item"><span class="cat-img">👕</span><span>Men Shirts</span></a>
+      <a href="product.html" class="cat-item"><span class="cat-img">👖</span><span>Denim Jeans</span></a>
+      <a href="product.html" class="cat-item"><span class="cat-img">🧥</span><span>Casual Suit</span></a>
+      <a href="product.html" class="cat-item"><span class="cat-img">👗</span><span>Summer Dress</span></a>
+      <a href="product.html" class="cat-item"><span class="cat-img">👚</span><span>Sweaters</span></a>
+      <button class="show-more">◎ Show more...</button>
+    </div>
+  </div>
+  <ul class="menu">
+    <li class="dropdown"><a href="#">Home ▾</a><ul class="dropdown-menu"><li><a href="#">Home 1</a></li><li><a href="#">Home 2</a></li><li><a href="#">Home 3</a></li></ul></li>
+    <li class="dropdown"><a href="#">Shop ▾</a><ul class="dropdown-menu"><li><a href="#">All Products</a></li><li><a href="#">New Arrivals</a></li><li><a href="#">Best Sellers</a></li></ul></li>
+    <li class="dropdown"><a href="#">Blog ▾</a><ul class="dropdown-menu"><li><a href="#">Blog Grid</a></li><li><a href="#">Blog Details</a></li></ul></li>
+    <li class="dropdown"><a href="#">Pages ▾</a><ul class="dropdown-menu"><li><a href="#">About Us</a></li><li><a href="#">Contact</a></li><li><a href="#">Cart</a></li></ul></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+  <span class="deal">🔥 Deal</span>
+  <span class="star">★</span>
+  <span class="icon-wrap">♡<span class="badge badge-red">12</span></span>
+  <span class="star">★</span>
+  <span class="icon-wrap">🛍️<span class="badge badge-yellow">01</span></span>
+</div>
+</nav>
+<section class="hero">
+  <div class="hero-text">
+    <span class="hero-small">Best for your categories</span>
+    <h1>Exclusive Collection<br>in <mark>Our Online</mark> Store</h1>
+    <p>Discover our exclusive collection available only in our online store. Shop now for unique and premium items that you won't find anywhere else.</p>
+    <div class="hero-bottom">
+      <div class="hero-price">
+        <span class="dollar">$</span>
+        <div>
+          <small>Discount Price</small>
+          <b>140.00</b>
+        </div>
+      </div>
+      <span class="dotted-line"></span>
+      <a href="#shop" class="btn-shop" id="shopBtn">Shop Now</a>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="hero-one_img1.webp" alt="Exclusive Collection">
+  </div>
+</section>
+<section>
+<!-- الشريط الأسود المتحرك -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>JACKETS</span><i>✦</i>
+    <span>JEANS</span><i>✦</i>
+    <span>BLAZER</span><i>✦</i>
+    <span>MEN</span><i>✦</i>
+    <span>JACKETS</span><i>✦</i>
+    <span>WOMEN</span><i>✦</i>
+    <span>SHIRTS</span><i>✦</i>
+    <span>JACKETS</span><i>✦</i>
+    <span>JEANS</span><i>✦</i>
+    <span>BLAZER</span><i>✦</i>
+    <span>MEN</span><i>✦</i>
+    <span>JACKETS</span><i>✦</i>
+    <span>WOMEN</span><i>✦</i>
+    <span>SHIRTS</span><i>✦</i>
+  </div>
+</div>
+</section>
+<!-- سكشن المميزات -->
+<section class="features">
+  <div class="feature">
+    <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+    <div class="feature-text">
+      <h3>Free Shipping</h3>
+      <p>You get your items delivered without any extra cost.</p>
+    </div>
+  </div>
+
+  <div class="feature">
+    <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+    <div class="feature-text">
+      <h3>Great Support 24/7</h3>
+      <p>Our customer support team is available around the clock</p>
+    </div>
+  </div>
+
+  <div class="feature">
+    <div class="feature-icon"><i class="fa-solid fa-rotate-left"></i></div>
+    <div class="feature-text">
+      <h3>Return Available</h3>
+      <p>Making it easy to return any items if you're not satisfied.</p>
+    </div>
+  </div>
+
+  <div class="feature">
+    <div class="feature-icon"><i class="fa-solid fa-lock"></i></div>
+    <div class="feature-text">
+      <h3>Secure Payment</h3>
+      <p>Shop with confidence knowing that our secure payment</p>
+    </div>
+  </div>
+</section>
+<!-- ===== Hero Banners - بداية السكشن ===== -->
+<section class="hero-banners">
+  <div class="hero-banners-container">
+
+    <!-- الكارت الأول 50% -->
+    <div class="banner-card">
+      <div class="banner-text">
+        <span class="banner-up">UP TO</span>
+        <h2>50%</h2>
+        <p>Exclusive Kids & Adults<br>Summer Outfits</p>
+        <a href="#" class="banner-btn">Shop Now</a>
+      </div>
+      <div class="banner-img">
+        <img src="banner-1.webp" alt="Summer Outfits">
+      </div>
+      <span class="banner-badge">%</span>
+    </div>
+
+    <!-- الكارت التاني 70% -->
+    <div class="banner-card">
+      <div class="banner-text">
+        <span class="banner-up">UP TO</span>
+        <h2>70%</h2>
+        <p>Exclusive Kids & Adults<br>Summer Outfits</p>
+        <a href="#" class="banner-btn">Shop Now</a>
+      </div>
+      <div class="banner-img">
+        <img src="banner-2.webp" alt="Summer Outfits">
+      </div>
+      <span class="banner-badge">%</span>
+    </div>
+
+  </div>
+</section>
+<!-- ===== Hero Banners - نهاية السكشن ===== -->
+ <!-- ===== Our Features Collection ===== -->
+<section class="features">
+  <div class="features-head">
+    <div>
+      <span class="features-small">✦ Feature Products</span>
+      <h2>Our Features Collection</h2>
+    </div>
+    <div class="features-tabs">
+      <button class="ftab active" data-filter="best">Best Sellers</button>
+      <button class="ftab" data-filter="new">New Products</button>
+      <button class="ftab" data-filter="sale">Sale Products</button>
+    </div>
+  </div>
+
+  <div class="features-grid">
+    <!-- 1 -->
+    <article class="f-card" data-cat="best">
+      <div class="f-img">
+        <img src="feature-product-1.webp" alt="Lightweight linen sweater">
+        <span class="f-off">20% OFF</span>
+        <button class="f-heart">♡</button>
+        <button class="f-add">Add To Cart</button>
+      </div>
+      <div class="f-info">
+        <h3>Lightweight linen sweater with sleeves</h3>
+        <div class="f-stars">★★★★★</div>
+        <div class="f-price"><b>$40.00</b> <del>$50.00</del></div>
+      </div>
+    </article>
+    <!-- 2 -->
+    <article class="f-card" data-cat="new">
+      <div class="f-img">
+        <img src="feature-product-2.webp" alt="Cozy knit sweater">
+        <span class="f-off">20% OFF</span>
+        <button class="f-heart">♡</button>
+        <button class="f-add">Add To Cart</button>
+      </div>
+      <div class="f-info">
+        <h3>Cozy knit sweater with pockets</h3>
+        <div class="f-stars">★★★★★</div>
+        <div class="f-price"><b>$33.00</b> <del>$40.00</del></div>
+      </div>
+    </article>
+    <!-- 3 -->
+    <article class="f-card" data-cat="sale">
+      <div class="f-img">
+        <img src="feature-product-3.webp" alt="Athletic leggings">
+        <span class="f-off">20% OFF</span>
+        <button class="f-heart">♡</button>
+        <button class="f-add">Add To Cart</button>
+      </div>
+      <div class="f-info">
+        <h3>Athletic leggings with mesh panels</h3>
+        <div class="f-stars">★★★★★</div>
+        <div class="f-price"><b>$25.00</b> <del>$30.00</del></div>
+      </div>
+    </article>
+    <!-- 4 -->
+    <article class="f-card" data-cat="best">
+      <div class="f-img">
+        <img src="feature-product-1 (1).webp" alt="Classic leather biker jacket">
+        <span class="f-off">20% OFF</span>
+        <button class="f-heart">♡</button>
+        <button class="f-add">Add To Cart</button>
+      </div>
+      <div class="f-info">
+        <h3>Classic leather biker jacket with zippers</h3>
+        <div class="f-stars">★★★★★</div>
+        <div class="f-price"><b>$80.00</b> <del>$100.00</del></div>
+      </div>
+    </article>
+    <!-- 5 -->
+    <article class="f-card" data-cat="new">
+      <div class="f-img">
+        <img src="feature-product-2 (1).webp" alt="Floral print sundress">
+        <span class="f-off">20% OFF</span>
+        <button class="f-heart">♡</button>
+        <button class="f-add">Add To Cart</button>
+      </div>
+      <div class="f-info">
+        <h3>Floral print sundress with belt</h3>
+        <div class="f-stars">★★★★★</div>
+        <div class="f-price"><b>$45.00</b> <del>$55.00</del></div>
+      </div>
+    </article>
+    <!-- 6 -->
+    <article class="f-card" data-cat="sale">
+      <div class="f-img">
+        <img src="feature-product-3 (1).webp" alt="Relaxed fit denim jeans">
+        <span class="f-off">20% OFF</span>
+        <button class="f-heart">♡</button>
+        <button class="f-add">Add To Cart</button>
+      </div>
+      <div class="f-info">
+        <h3>Relaxed fit denim jeans with pockets</h3>
+        <div class="f-stars">★★★★★</div>
+        <div class="f-price"><b>$38.00</b> <del>$48.00</del></div>
+      </div>
+    </article>
+    <!-- 7 -->
+    <article class="f-card" data-cat="best">
+      <div class="f-img">
+        <img src="feature-product-4.webp" alt="Striped long sleeve top">
+        <span class="f-off">20% OFF</span>
+        <button class="f-heart">♡</button>
+        <button class="f-add">Add To Cart</button>
+      </div>
+      <div class="f-info">
+        <h3>Striped long sleeve top with buttons</h3>
+        <div class="f-stars">★★★★★</div>
+        <div class="f-price"><b>$28.00</b> <del>$35.00</del></div>
+      </div>
+    </article>
+    <!-- 8 -->
+    <article class="f-card" data-cat="new">
+      <div class="f-img">
+        <img src="feature-product-4 (1).webp" alt="Plaid wool coat">
+        <span class="f-off">20% OFF</span>
+        <button class="f-heart">♡</button>
+        <button class="f-add">Add To Cart</button>
+      </div>
+      <div class="f-info">
+        <h3>Plaid wool coat with pockets</h3>
+        <div class="f-stars">★★★★★</div>
+        <div class="f-price"><b>$95.00</b> <del>$120.00</del></div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="top-category">
+  <div class="cat-head">
+    <div>
+      <p class="small">Categories</p>
+      <h2>Browse Top Category</h2>
+    </div>
+    <div class="cat-btns">
+      <button class="cat-prev">‹</button>
+      <button class="cat-next">›</button>
+    </div>
+  </div>
+
+  <div class="cat-track">
+    <div class="cat-card"><img src="category-1.webp"><span>Men Blazer</span></div>
+    <div class="cat-card"><img src="category-2.webp"><span>Denim Jeans</span></div>
+    <div class="cat-card"><img src="category-3.webp"><span>Casual Suit</span></div>
+    <div class="cat-card"><img src="category-4.webp"><span>Summer Dress</span></div>
+    <div class="cat-card"><img src="category-5.webp"><span>Sweaters</span></div>
+    <div class="cat-card"><img src="category-6.webp"><span>Jackets</span></div>
+  </div>
+</section>
+  <!-- ===== سكشن جديد - New Arrivals ===== -->
+<section class="new-section" id="newArrivals">
+  <div class="new-head">
+    <div class="new-head-left">
+      <span class="new-small">✦ New Products</span>
+      <h2>New Arrivals Collection</h2>
+    </div>
+    <div class="new-tabs">
+      <button class="ntab active" data-filter="best">Best Sellers</button>
+      <button class="ntab" data-filter="new">New Products</button>
+      <button class="ntab" data-filter="sale">Sale Products</button>
+    </div>
+  </div>
+
+  <div class="new-grid">
+    <!-- كارت 1 -->
+    <div class="n-card" data-cat="best">
+      <div class="n-img">
+        <img src="category-4.webp" alt="">
+        <span class="n-off">-30%</span>
+        <button class="n-heart">♡</button>
+        <button class="n-add">Add To Cart</button>
+      </div>
+      <div class="n-info">
+        <div class="n-stars">★★★★★ <span>(5)</span></div>
+        <h3>Floral dress with pockets</h3>
+        <div class="n-price"><b>$45.00</b> <s>$65.00</s></div>
+      </div>
+    </div>
+
+    <!-- كارت 2 -->
+    <div class="n-card" data-cat="new">
+      <div class="n-img">
+        <img src="feature-product-3 (1).webp" alt="">
+        <span class="n-off">-20%</span>
+        <button class="n-heart">♡</button>
+        <button class="n-add">Add To Cart</button>
+      </div>
+      <div class="n-info">
+        <div class="n-stars">★★★★★ <span>(4)</span></div>
+        <h3>White cotton t-shirt</h3>
+        <div class="n-price"><b>$25.00</b> <s>$32.00</s></div>
+      </div>
+    </div>
+
+    <!-- كارت 3 -->
+    <div class="n-card" data-cat="sale">
+      <div class="n-img">
+        <img src="feature-product-4.webp" alt="">
+        <span class="n-off">-50%</span>
+        <button class="n-heart">♡</button>
+        <button class="n-add">Add To Cart</button>
+      </div>
+      <div class="n-info">
+        <div class="n-stars">★★★★★ <span>(6)</span></div>
+        <h3>Elegant summer dress</h3>
+        <div class="n-price"><b>$38.00</b> <s>$76.00</s></div>
+      </div>
+    </div>
+
+    <!-- كارت 4 -->
+    <div class="n-card" data-cat="best">
+      <div class="n-img">
+        <img src="feature-product-2.webp" alt="">
+        <span class="n-off">-15%</span>
+        <button class="n-heart">♡</button>
+        <button class="n-add">Add To Cart</button>
+      </div>
+      <div class="n-info">
+        <div class="n-stars">★★★★★ <span>(8)</span></div>
+        <h3>Stylish fashion jacket</h3>
+        <div class="n-price"><b>$58.00</b> <s>$68.00</s></div>
+      </div>
+    </div>
+
+    <!-- كارت 5 -->
+    <div class="n-card" data-cat="new">
+      <div class="n-img">
+        <img src="feature-product-2 (1).webp" alt="">
+        <span class="n-off">-25%</span>
+        <button class="n-heart">♡</button>
+        <button class="n-add">Add To Cart</button>
+      </div>
+      <div class="n-info">
+        <div class="n-stars">★★★★★ <span>(3)</span></div>
+        <h3>Casual white dress</h3>
+        <div class="n-price"><b>$42.00</b> <s>$56.00</s></div>
+      </div>
+    </div>
+
+    <!-- كارت 6 -->
+    <div class="n-card" data-cat="sale">
+      <div class="n-img">
+        <img src="feature-product-1.webp" alt="">
+        <span class="n-off">-40%</span>
+        <button class="n-heart">♡</button>
+        <button class="n-add">Add To Cart</button>
+      </div>
+      <div class="n-info">
+        <div class="n-stars">★★★★★ <span>(7)</span></div>
+        <h3>Shopping look outfit</h3>
+        <div class="n-price"><b>$30.00</b> <s>$50.00</s></div>
+      </div>
+    </div>
+
+    <!-- كارت 7 -->
+    <div class="n-card" data-cat="best">
+      <div class="n-img">
+        <img src="feature-product-3.webp" alt="">
+        <span class="n-off">-10%</span>
+        <button class="n-heart">♡</button>
+        <button class="n-add">Add To Cart</button>
+      </div>
+      <div class="n-info">
+        <div class="n-stars">★★★★★ <span>(9)</span></div>
+        <h3>Yellow fashion style</h3>
+        <div class="n-price"><b>$35.00</b> <s>$39.00</s></div>
+      </div>
+    </div>
+
+    <!-- كارت 8 -->
+    <div class="n-card" data-cat="new">
+      <div class="n-img">
+        <img src="feature-product-1.webp" alt="">
+        <span class="n-off">-35%</span>
+        <button class="n-heart">♡</button>
+        <button class="n-add">Add To Cart</button>
+      </div>
+      <div class="n-info">
+        <div class="n-stars">★★★★★ <span>(2)</span></div>
+        <h3>Trendy girl outfit</h3>
+        <div class="n-price"><b>$48.00</b> <s>$74.00</s></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===== How It Work Processing ===== -->
+<section class="how-section">
+  <div class="how-head">
+    <span class="how-small">✦ Work Processing</span>
+    <h2>How It Work Processing</h2>
+  </div>
+
+  <div class="how-grid">
+    <!-- 1 -->
+    <div class="how-card">
+      <div class="how-icon">🔍</div>
+      <span class="how-num">01</span>
+      <h3>Browsing & Choosing</h3>
+      <p>Browse through our wide range of products, filter by your style and choose what you love.</p>
+    </div>
+
+    <!-- 2 -->
+    <div class="how-card">
+      <div class="how-icon">💳</div>
+      <span class="how-num">02</span>
+      <h3>Checkout & Payment</h3>
+      <p>Add your items to cart and checkout easily with our secure payment methods.</p>
+    </div>
+
+    <!-- 3 -->
+    <div class="how-card">
+      <div class="how-icon">📦</div>
+      <span class="how-num">03</span>
+      <h3>Order Fulfillment</h3>
+      <p>We prepare your order carefully and pack it with love to be ready for shipping.</p>
+    </div>
+
+    <!-- 4 -->
+    <div class="how-card">
+      <div class="how-icon">🚚</div>
+      <span class="how-num">04</span>
+      <h3>Delivery to Customer</h3>
+      <p>Your order is delivered fast to your door, with tracking at every step.</p>
+    </div>
+  </div>
+</section>
+<!-- ===== What's Trending Now ===== -->
+<section class="trend-section">
+  <div class="trend-head">
+    <div class="trend-head-left">
+      <span class="trend-small">✦ Trending Products</span>
+      <h2>What's Trending Now</h2>
+    </div>
+    <div class="trend-btns">
+      <button class="t-prev">‹</button>
+      <button class="t-next">›</button>
+    </div>
+  </div>
+
+  <div class="trend-grid">
+    <!-- 1 -->
+    <div class="t-card">
+      <div class="t-img">
+        <img src="trending-product-1.webp" alt="">
+        <button class="t-heart">♡</button>
+      </div>
+      <div class="t-info">
+        <div class="t-stars">★★★★★</div>
+        <h3>Women Red & White Striped Crepe Top</h3>
+        <div class="t-price"><b>$35.00</b> <s>$45.00</s></div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="t-card">
+      <div class="t-img">
+        <img src="trending-product-2.webp" alt="">
+        <button class="t-heart">♡</button>
+      </div>
+      <div class="t-info">
+        <div class="t-stars">★★★★★</div>
+        <h3>Men Olive Green Sweater with Pockets</h3>
+        <div class="t-price"><b>$40.00</b> <s>$55.00</s></div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="t-card">
+      <div class="t-img">
+        <img src="trending-product-3.webp" alt="">
+        <button class="t-heart">♡</button>
+      </div>
+      <div class="t-info">
+        <div class="t-stars">★★★★★</div>
+        <h3>Striped Yellow T-Shirt with Pocket</h3>
+        <div class="t-price"><b>$28.00</b> <s>$38.00</s></div>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="t-card">
+      <div class="t-img">
+        <img src="trending-product-4.webp" alt="">
+        <button class="t-heart">♡</button>
+      </div>
+      <div class="t-info">
+        <div class="t-stars">★★★★★</div>
+        <h3>Denim Jacket with Rolled Cuffs</h3>
+        <div class="t-price"><b>$55.00</b> <s>$70.00</s></div>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="t-card">
+      <div class="t-img">
+        <img src="trending-product-1.webp" alt="">
+        <button class="t-heart">♡</button>
+      </div>
+      <div class="t-info">
+        <div class="t-stars">★★★★★</div>
+        <h3>Classic Black Leather Jacket</h3>
+        <div class="t-price"><b>$80.00</b> <s>$100.00</s></div>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="t-card">
+      <div class="t-img">
+        <img src="trending-product-2.webp" alt="">
+        <button class="t-heart">♡</button>
+      </div>
+      <div class="t-info">
+        <div class="t-stars">★★★★★</div>
+        <h3>Floral Summer Dress with Belt</h3>
+        <div class="t-price"><b>$45.00</b> <s>$60.00</s></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===== Deal of the Week - العداد ===== -->
+<section class="deal-section">
+  <div class="deal-left">
+    <span class="deal-small">● Deal of the Week</span>
+    <h2>Hurry Up! Offer ends in. Get<br><span>UP TO 80% OFF</span></h2>
+
+    <div class="countdown">
+      <div class="cd-box">
+        <b id="cd-days">00</b>
+        <small>Days</small>
+      </div>
+      <div class="cd-box">
+        <b id="cd-hours">00</b>
+        <small>Hours</small>
+      </div>
+      <div class="cd-box">
+        <b id="cd-mins">00</b>
+        <small>Minutes</small>
+      </div>
+      <div class="cd-box">
+        <b id="cd-secs">00</b>
+        <small>Seconds</small>
+      </div>
+    </div>
+
+    <a href="#shop" class="deal-btn">Shop Now</a>
+    <p class="deal-ended" style="display:none;">Offer Ended </p>
+  </div>
+
+  <div class="deal-right">
+    <img src="deal-1.webp" alt="Deal">
+  </div>
+</section>
+<!-- ===== What Our Clients Say About Us ===== -->
+<section class="clients-section">
+  <div class="clients-left">
+    <span class="clients-small">✦ Testimonials</span>
+    <h2>What Our Clients Say<br>About Us</h2>
+    <div class="clients-btns">
+      <button class="c-prev">‹</button>
+      <button class="c-next">›</button>
+    </div>
+  </div>
+
+  <div class="clients-track">
+    <!-- 1 -->
+    <div class="c-card">
+      <span class="c-quote">❝</span>
+      <p>The unbeatable dragon costume went beyond my wildest dreams. It was Halloween-perfect, turning heads everywhere. If you're looking for a show-stopping costume, this is it. You'll feel like a legend!</p>
+      <div class="c-user">
+        <img src="category-1.webp" alt="">
+        <div>
+          <b>Brooklyn Ann</b>
+          <small>★★★★★</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="c-card">
+      <span class="c-quote">❝</span>
+      <p>Shopping here was so easy and fast. The quality is amazing and the delivery came before time. I will definitely order again, highly recommended for everyone!</p>
+      <div class="c-user">
+        <img src="feature-product-2.webp" alt="">
+        <div>
+          <b>Robert John</b>
+          <small>★★★★★</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="c-card">
+      <span class="c-quote">❝</span>
+      <p>I loved the collection, the prices are great and the support team helped me choose the perfect size. Best online store experience ever!</p>
+      <div class="c-user">
+        <img src="author-1.webp" alt="">
+        <div>
+          <b>Sara Ahmed</b>
+          <small>★★★★★</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="c-card">
+      <span class="c-quote">❝</span>
+      <p>Amazing service! My order arrived in 2 days and the jacket fits perfectly. The quality exceeded my expectations.</p>
+      <div class="c-user">
+        <img src="author-2.webp" alt="">
+        <div>
+          <b>Omar Khaled</b>
+          <small>★★★★★</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===== Explore Our Articles ===== -->
+<section class="blog-section">
+  <div class="blog-head">
+    <span>✦ Our Blogs</span>
+    <h2>Explore Our Articles</h2>
+  </div>
+
+  <div class="blog-grid">
+    <!-- الكبيرة اللي على الشمال -->
+    <article class="blog-big">
+      <img src="blog-big-1.webp" alt="">
+      <div class="blog-info">
+        <small>🗓️ 20 Aug, 2024 &nbsp; • &nbsp; 👤 Admin</small>
+        <h3>From Clicks to Closets: Mastering the Art of Fashion E-commerce Marketing</h3>
+        <a href="#">Read More →</a>
+      </div>
+    </article>
+
+    <!-- الصغيرة اللي على اليمين -->
+    <div class="blog-smalls">
+      <article class="blog-small">
+        <img src="blog-sm-1.webp" alt="">
+        <div>
+          <small>🗓️ 18 Aug, 2024</small>
+          <h4>New Tips: How You Can Wrap Online Fashion</h4>
+          <a href="#">Read More →</a>
+        </div>
+      </article>
+
+      <article class="blog-small">
+        <img src="blog-sm-2.webp" alt="">
+        <div>
+          <small>🗓️ 15 Aug, 2024</small>
+          <h4>Fashion Game: 5 Online Clothing Stores</h4>
+          <a href="#">Read More →</a>
+        </div>
+      </article>
+
+      <article class="blog-small">
+        <img src="blog-sm-3.webp" alt="">
+        <div>
+          <small>🗓️ 12 Aug, 2024</small>
+          <h4>How Can Fast Fashion Brands Make That Can Last?</h4>
+          <a href="#">Read More →</a>
+        </div>
+      </article>
+
+      <article class="blog-small">
+        <img src="blog-sm-4.webp" alt="">
+        <div>
+          <small>🗓️ 10 Aug, 2024</small>
+          <h4>A Guide to Streamlining Your Fashion Shopping Experience</h4>
+          <a href="#">Read More →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- ===== Our Newsletter ===== -->
+<section class="news-section">
+  <div class="news-left">
+    <span class="news-small">Our Newsletter</span>
+    <h2>Get Weekly Update. Sign Up And Get Up<br>To <span>20% Off</span> Your First Purchase</h2>
+
+    <form class="news-form" id="newsForm">
+      <input type="email" id="newsEmail" placeholder="Write your Email Address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <p class="news-msg" id="newsMsg"></p>
+  </div>
+
+  <div class="news-right">
+    <span class="news-stars">✨</span>
+    <img src="newsletter-1.webp" alt="Newsletter">
+  </div>
+</section>
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="f-col f-brand">
+      <h2>pesco<span>.</span></h2>
+      <p>We are a leading international brand with high quality clothes, shoes and accessories.</p>
+      <div class="f-social">
+        <a href="#">f</a><a href="#">𝕏</a><a href="#">in</a><a href="#">◎</a>
+      </div>
+    </div>
+
+    <div class="f-col">
+      <h3>Customer Services</h3>
+      <ul>
+        <li><a href="#">Collections & Delivery</a></li>
+        <li><a href="#">Returns & Refunds</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Delivery Return</a></li>
+        <li><a href="#">Store Locations</a></li>
+      </ul>
+    </div>
+
+    <div class="f-col">
+      <h3>Quick Link</h3>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms Of Use</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Login / Register</a></li>
+      </ul>
+    </div>
+
+    <div class="f-col">
+      <h3>Recent Post</h3>
+      <div class="f-post">
+        <img src="recent-post-1.webp" alt="">
+        <div><p>Tips For Finding Affordable Fashion For Kids</p><small>July 25, 2024</small></div>
+      </div>
+      <div class="f-post">
+        <img src="recent-post-2.webp" alt="">
+        <div><p>Mastering Fashion: An Art Of Fashion & Style</p><small>July 25, 2024</small></div>
+      </div>
+      <div class="f-post">
+        <img src="recent-post-3.webp" alt="">
+        <div><p>Must-Have Trends You Can Shop Online Now</p><small>July 25, 2024</small></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 All rights reserved by Pesco</p>
+    <div class="f-pay">
+      <span>VISA</span><span>Mastercard</span><span>PayPal</span>
+    </div>
+  </div>
+</footer>
+
+<!-- الزرار الأحمر اللي بيطلع فوق -->
+<button id="backTop" class="back-top">↑</button>
+<!-- ===== Cart Drawer ===== -->
+<div id="cartOverlay" class="cart-overlay"></div>
+
+<div id="cartDrawer" class="cart-drawer">
+  <div class="cart-head">
+    <h3>Your Cart (<span id="cartCount">0</span>)</h3>
+    <button id="closeCart">✕</button>
+  </div>
+
+  <div id="cartItems" class="cart-items">
+    <p class="cart-empty">Your cart is empty 🛒</p>
+  </div>
+
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total:</span>
+      <b id="cartTotal">$0.00</b>
+    </div>
+    <button class="checkout-btn">Checkout</button>
+  </div>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+  <script>
+    new WOW().init();
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
